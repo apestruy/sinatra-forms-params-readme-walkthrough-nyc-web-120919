@@ -9,12 +9,3 @@ class App < Sinatra::Base
     "My name is #{params[:name]}, and I love #{params[:favorite_food]}"
   end
 end
-
-params = {
-  :name => "Sam",
-  :favorite_food => "Green Eggs and Ham"
-}
-
-post '/food' do
-    params.to_s
-  end
